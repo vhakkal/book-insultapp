@@ -35,7 +35,7 @@ public class InsultGenerator {
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-			return "Database connection problem!";
+			return "Database connection problem: " + e.getMessage();
 		}
 		return theInsult;
 	}
